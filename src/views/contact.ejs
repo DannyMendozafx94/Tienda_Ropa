@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Page</title>
+    <%- include("partials/head") %>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include("partials/navigation") %>
+
+    <main class="contenedor">
+      <h1>Calvin Klein</h1>
+      <div class="camisa">
+          <img class="camisa__imagen" src="https://i.ebayimg.com/thumbs/images/g/VB4AAOSwkY9jtCPP/s-l300.jpg" alt="Imagen del producto">
+          <div class="camisa__contenido">
+              <p>Nuestro modelo mide 1,86 m y lleva una talla M.
+
+                94 % algodón y 6 % elastano
+                lavado a máquina
+                secado en secadora a baja temperatura
+                talla habitual.
+                País de origen: Vietnam</p>
+              
+              <form class="formulario">
+                  <select class="formulario__campo">
+                      <option disabled selected>--Selecionar Talla--</option>
+                      <option>Chica</option>
+                      <option>Mediana</option>
+                      <option>Grande</option>
+                  </select>
+
+                  <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                  <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+              </form>
+          </div>
+      </div>
+  </main>
+
+
+    <%- include("partials/footer") %>
+  </body>
+</html>
